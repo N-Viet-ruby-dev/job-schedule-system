@@ -3,10 +3,17 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
 
-<<<<<<< HEAD
   resources :tasks
   resources :recurring_tasks
-=======
->>>>>>> user_basic_function
+
+  match '/users',   to: 'users#index',   via: 'get'
   devise_for :users
+
+  resources :chatrooms do
+    resource :chatroom_users
+    resources :messages
+  end
+
+  resources :direct_messages
+
 end

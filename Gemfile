@@ -7,11 +7,13 @@ ruby "2.5.1"
 
 gem "rails", "~> 5.2.3"
 
+gem "redis"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap", "~> 4.3.1"
 gem "bootstrap-daterangepicker-rails"
 gem "bootstrap-datepicker-rails"
 gem "coffee-rails", "~> 4.2"
+gem "config"
 gem "devise"
 gem "fullcalendar-rails"
 gem "momentjs-rails"
@@ -29,6 +31,7 @@ gem "simple_form"
 gem "html2slim"
 gem "popper_js"
 gem "ice_cube"
+gem "font-awesome-rails"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]

@@ -1,0 +1,18 @@
+.container.mt-3
+  h2 = t ".title"
+  p t ".mess"
+  input#myInput.form-control[type="text" placeholder="Search.."]
+  br
+  table.table.table-striped.table-condensed
+    thead
+      tr
+        th = t ".name"
+        th = t ".email"
+        th = t ".role"
+    tbody#myTable
+      - @users.each do |user|
+        tr
+          td
+            = link_to online_status(user), direct_message_path(user.id), data: {behavior: "chatroom-link", chatroom_id: Chatroom.direct_message_for_users([current_user, user]).id }
+          td = user.email
+          td = user.role
