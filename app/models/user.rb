@@ -7,4 +7,14 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  has_many :chatroom_users
+  has_many :chatrooms, through: :chatroom_users
+  has_many :messages
+
+  enum role: { user: 0, leader: 1, admin: 2 }
+
+  def online?
+    !Redis.new.get("user_#{id}_online").nil?
+  end
 end

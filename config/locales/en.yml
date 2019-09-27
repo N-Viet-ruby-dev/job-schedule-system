@@ -1,4 +1,26 @@
 en:
+  chatrooms:
+    edit:
+      title-edit: "Editing chatroom"
+      btn-show: "Show"
+      btn-back: "Back"
+    index:
+      title-edit: "All Channels"
+      mess: "Type something in the input field to search the table for names:"
+      lb-channel: "Chanel Name"
+      lb-date: "Date Created"
+      lb-number: "Number of Members"
+      lb-action: "Control Action"
+      btn-destroy: "Destroy"
+      mess-sure: "Are you sure?"
+      btn-edit: "Edit"
+      btn-leave: "Leave"
+      btn-join: "Join"
+    new:
+      title-new: "New chatroom"
+      btn-back: "Back"
+    show:
+      mess-show: "Typing something to talk..."
   layouts:
     application:
       title-app: "Job Schedule"
@@ -7,6 +29,11 @@ en:
       logout: "Log out"
       create_user: "Create Account"
       sigin: "Sign in"
+    left:
+      home: "HOME"
+      login: "LOGIN"
+      channels: "CHANNELS"
+      members: "MEMBERS"
   tasks:
     edit:
       edit_task: "Edit Task"
@@ -32,91 +59,14 @@ en:
     create:
       create_recuring_task: "Create recurring task successfully"
     update:
-      update_recuring_task: "Update recurring task successfully"
+      update_recurring_task: "Update recurring task successfully"
       update_anchor_task: "Update anchor recurring task successfully"
     destroy:
-      destroy_recuring_task: "Delete recurring task successfully"
-  devise:
-    confirmations:
-      new:
-        title-confir: "Resend confirmation instructions"
-        btn-new: "Resend confirmation instructions"
-    confirmation_instructions:
-      title-mail: "Welcome "
-      hi: "!"
-      mail-mess: ":You can confirm your account email through the link below: "
-      btn-sure: "Confirm my account"
-    email_changed:
-      title-mail: "Hello Rubyer "
-      hi: "!"
-      lb-mail: "We're contacting you to notify you that your email is being changed to "
-      hi-dot: "."
-      lb-mailed: "We're contacting you to notify you that your email has been changed to "
-    password_change:
-      title-mail: "Hello Rubyer "
-      hi: "!"
-      pass-mailed: "We're contacting you to notify you that your password has been changed.
-"
-    reset_password_instructions:
-      title-mail: "Hello Rubyer "
-      hi: "!"
-      lb-reset: "Someone has requested a link to change your password. You can do this through the link below."
-      btn-reset: "Change my password"
-      lb-mess: "If you didn't request this, please ignore this email."
-      lb-messs: "Your password won't change until you access the link above and create a new one."
-    unlock_instructions:
-      title-mail: "Hello Rubyer "
-      hi: "!"
-      lb-locked: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
-      lb-click: "Click the link below to unlock your account:"
-      btn-unlock: "Unlock my account"
-    passwords:
-      edit:
-        title-pass: "Change your password"
-        lb-pass: "New password"
-        lb-min: "Characters minimum"
-        lb-conf-pass: "Confirm new password"
-        btn-pass: "Change my password"
-      new:
-        title-pass: "Forgot your password?"
-        notice-pass: "Enter your email address below and we will send you a link to reset your password."
-        lb-email: "Email Address"
-        btn-pass: "Send me reset password instructions"
-    registrations:
-      edit:
-        title-reg: "Your Account"
-        user-reg: "Your Name"
-        lb-conf: "Currently waiting confirmation for:"
-        email-reg: "Email Address"
-        pass-reg: "Password"
-        lb-message: "Leave blank if you don't want to change it"
-        lb-confir: "Confirm Password"
-        lb-current: "Current Password"
-        lb-curr-pass: "We need your current password to confirm your changes"
-        btn-reg: "Update"
-        lb-del-acc: "Delete my account"
-        lb-cancel: "Are you sure? You cannot undo this."
-      new:
-        title-reg: "Sign up"
-        user-reg: "Your Name"
-        email-reg: "Email Address"
-        pass-reg: "Password"
-        lb-confir: "Confirm Password"
-        btn-sign: "Sign up"
-    sessions:
-      new:
-        title-login: "Log in your account"
-        email-reg: "Email Address"
-        pass-reg: "Password"
-        title-rem: "Remember me"
-        btn-sess: "Log in"
-    unlocks:
-      new:
-        title-un: "Resend unlock instructions"
-        btn-un: "Resend"
-  layouts:
-    application:
-      title-app: "Job Schedule"
-  static_pages:
-    home:
-      title-home: "Static pages of home"
+      destroy_recurring_task: "Delete recurring task successfully"
+  users:
+    index:
+      title: "All Users"
+      mess: "Type something in the input field to search the table for names, emails, or role:"
+      name: "User Name"
+      email: "Email"
+      role: "Role"
