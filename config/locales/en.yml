@@ -182,3 +182,11 @@ en:
       status: "Status: "
       recommended_code: "Recommended code: "
       right_reserved: "2019 © RubyDevelopmentDaNang. ALL Rights Reserved."
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: "Password too short (minimum %{count} characters)"
+              too_long: "Password too long (maximun %{count} characters)"

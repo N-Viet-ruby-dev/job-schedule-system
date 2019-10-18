@@ -1,2 +1,5 @@
 limit:
   messages: 100
+user:
+  min_password: 6
+  max_password: 15

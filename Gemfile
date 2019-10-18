@@ -42,10 +42,15 @@ gem "ice_cube"
 gem "font-awesome-rails"
 gem "omniauth-slack"
 gem "select2-rails"
+gem "rails_emoji_picker"
 gem "activerecord-import"
+gem "whenever", require: false
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
+  gem "rspec-rails", "~> 3.7"
+  gem "faker", "~> 2.3"
+  gem "simplecov", require: false
 end
 
 group :development do
@@ -60,6 +65,9 @@ group :test do
   gem "capybara", ">= 2.15"
   gem "chromedriver-helper"
   gem "selenium-webdriver"
+  gem "shoulda-matchers", "~> 4.1"
+  gem "factory_bot_rails", "~> 5.1"
+  gem "database_cleaner", "~> 1.7"
 end
 
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
