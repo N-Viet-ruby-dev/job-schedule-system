@@ -18,6 +18,8 @@ class User < ApplicationRecord
   enum role: { user: 0, leader: 1, admin: 2 }
   scope :newest, -> { order created_at: :desc }
 
+  validates_presence_of :password_confirmation
+
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email

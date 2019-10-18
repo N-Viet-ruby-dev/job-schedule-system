@@ -7,6 +7,7 @@ ruby "2.5.1"
 
 gem "rails", "~> 5.2.3"
 
+gem "faker"
 gem "jquery-ui-rails"
 gem "ransack"
 gem "redis"
@@ -46,6 +47,10 @@ gem "activerecord-import"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "capybara", ">= 2.15"
+  gem "simplecov", require: false
 end
 
 group :development do
@@ -57,9 +62,10 @@ group :development do
 end
 
 group :test do
-  gem "capybara", ">= 2.15"
   gem "chromedriver-helper"
   gem "selenium-webdriver"
+  gem "shoulda-matchers", "~> 3.0", require: false
+  gem "database_cleaner", "~> 1.5"
 end
 
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
