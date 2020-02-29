@@ -27,7 +27,7 @@ gem "momentjs-rails"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "mysql2", ">= 0.4.4", "< 0.6.0"
-gem "puma", "~> 3.11"
+gem "puma", "~> 3.12"
 gem "rubocop", require: false
 gem "sass-rails", "~> 5.0"
 gem "slim-rails"
